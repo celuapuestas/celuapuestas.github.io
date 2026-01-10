@@ -3,11 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cajero Celuapuestas - Carga Rápida de Fichas</title>
+    
+    <!-- SEO Meta Tags -->
+    <title>Cajero Celuapuestas - Carga Rápida de Fichas 24/7</title>
+    <meta name="description" content="Depósitos instantáneos, retiros programados y atención personalizada. Tu cajero confiable en Celuapuestas para una experiencia de juego fluida y sin complicaciones.">
+    <meta name="keywords" content="Celuapuestas, fichas, depósitos, retiros, pagos, casino online, apuestas, carga rápida">
+    <meta name="author" content="Cajero Celuapuestas">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph Meta Tags (IMPORTANTE: Para WhatsApp, Facebook, Instagram) -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://celuapuestas.github.io">
+    <meta property="og:title" content="Cajero Celuapuestas - Carga Rápida de Fichas 24/7">
+    <meta property="og:description" content="Depósitos instantáneos, retiros programados y atención personalizada. Tu cajero confiable en Celuapuestas.">
+    <meta property="og:image" content="https://celuapuestas.github.io/logo.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Cajero Celuapuestas - Servicio de fichas 24/7">
+    <meta property="og:locale" content="es_ES">
+    <meta property="og:site_name" content="Cajero Celuapuestas">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://celuapuestas.github.io">
+    <meta name="twitter:title" content="Cajero Celuapuestas - Carga Rápida de Fichas 24/7">
+    <meta name="twitter:description" content="Depósitos instantáneos, retiros programados y atención personalizada. Tu cajero confiable en Celuapuestas.">
+    <meta name="twitter:image" content="https://celuapuestas.github.io/logo.png">
+    <meta name="twitter:image:alt" content="Cajero Celuapuestas - Servicio de fichas 24/7">
+    
+    <!-- Favicon Único - Se usa logo.png para todo -->
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="shortcut icon" href="favicon.png" type="image/png">
+    <link rel="apple-touch-icon" href="favicon.png">
+    
+    <!-- Preconexión y fuentes -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@700;800&display=swap" rel="stylesheet">
+    
+    <!-- Preload para carga rápida -->
+    <link rel="preload" as="image" href="favicon.png">
+    
     <style>
         :root {
             --primary: #121212;
@@ -56,7 +93,7 @@
         }
         
         h1 {
-            font-size: 3.5rem;
+            font-size: clamp(2rem, 5vw, 3.5rem);
             background: var(--gradient);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -64,19 +101,19 @@
         }
         
         h2 {
-            font-size: 2.5rem;
+            font-size: clamp(1.8rem, 4vw, 2.5rem);
             color: var(--light);
         }
         
         h3 {
-            font-size: 1.5rem;
+            font-size: clamp(1.2rem, 3vw, 1.5rem);
             color: var(--secondary);
         }
         
         p {
             color: var(--gray);
             margin-bottom: 1rem;
-            font-size: 1.1rem;
+            font-size: clamp(1rem, 2vw, 1.1rem);
         }
         
         .container {
@@ -110,6 +147,7 @@
             align-items: center;
         }
         
+        /* Logo simplificado - solo texto */
         .logo {
             display: flex;
             align-items: center;
@@ -132,7 +170,7 @@
         
         .logo-text {
             font-family: 'Poppins', sans-serif;
-            font-size: 1.4rem;
+            font-size: clamp(1.2rem, 3vw, 1.4rem);
             font-weight: 700;
             color: var(--light);
         }
@@ -162,7 +200,7 @@
         nav ul {
             display: flex;
             list-style: none;
-            gap: 2rem;
+            gap: clamp(1rem, 2vw, 2rem);
         }
         
         nav a {
@@ -172,6 +210,7 @@
             transition: var(--transition);
             padding: 8px 0;
             position: relative;
+            font-size: clamp(0.9rem, 1.5vw, 1rem);
         }
         
         nav a::after {
@@ -225,7 +264,7 @@
         }
         
         .hero p {
-            font-size: 1.2rem;
+            font-size: clamp(1rem, 2vw, 1.2rem);
             line-height: 1.8;
             margin-bottom: 2.5rem;
             max-width: 600px;
@@ -233,7 +272,7 @@
         
         .hero-stats {
             display: flex;
-            gap: 3rem;
+            gap: clamp(1.5rem, 3vw, 3rem);
             margin-top: 3rem;
             flex-wrap: wrap;
         }
@@ -271,16 +310,17 @@
             display: inline-flex;
             align-items: center;
             gap: 12px;
-            padding: 18px 40px;
+            padding: clamp(15px, 3vw, 18px) clamp(30px, 5vw, 40px);
             background: var(--gradient);
             color: var(--primary);
             text-decoration: none;
             border-radius: 12px;
             font-weight: 600;
-            font-size: 1.1rem;
+            font-size: clamp(1rem, 2vw, 1.1rem);
             transition: var(--transition);
             border: none;
             cursor: pointer;
+            white-space: nowrap;
         }
         
         .cta-button:hover {
@@ -295,11 +335,12 @@
             background: #25D366;
             color: white;
             text-decoration: none;
-            padding: 16px 32px;
+            padding: clamp(14px, 3vw, 16px) clamp(25px, 4vw, 32px);
             border-radius: 12px;
             font-weight: 600;
-            font-size: 1.1rem;
+            font-size: clamp(1rem, 2vw, 1.1rem);
             transition: var(--transition);
+            white-space: nowrap;
         }
         
         .whatsapp-button:hover {
@@ -309,12 +350,12 @@
         
         /* Sections */
         section {
-            padding: 100px 0;
+            padding: clamp(60px, 10vw, 100px) 0;
         }
         
         .section-header {
             text-align: center;
-            margin-bottom: 4rem;
+            margin-bottom: clamp(2rem, 4vw, 4rem);
         }
         
         .section-header h2 {
@@ -342,14 +383,14 @@
         /* Services */
         .services-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 2rem;
+            grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr));
+            gap: clamp(1.5rem, 3vw, 2rem);
         }
         
         .service-card {
             background: var(--card-bg);
             border-radius: var(--border-radius);
-            padding: 2.5rem;
+            padding: clamp(1.5rem, 3vw, 2.5rem);
             transition: var(--transition);
             border: 1px solid rgba(255, 255, 255, 0.05);
             height: 100%;
@@ -378,32 +419,150 @@
             margin-bottom: 1rem;
         }
         
-        /* Process */
-        .process {
-            background: linear-gradient(135deg, rgba(30, 30, 30, 0.8) 0%, rgba(18, 18, 18, 0.9) 100%);
+        /* NUEVO DISEÑO PARA HORARIO DE PAGOS */
+        .payment-schedule-section {
+            background: linear-gradient(135deg, rgba(30, 30, 30, 0.95) 0%, rgba(18, 18, 18, 0.98) 100%);
             border-radius: var(--border-radius);
-            padding: 80px 40px;
+            padding: clamp(40px, 8vw, 80px) 0;
+            position: relative;
+            overflow: hidden;
         }
         
-        .process-steps {
-            display: flex;
-            justify-content: space-between;
-            gap: 2rem;
+        .payment-schedule-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: var(--gradient);
+        }
+        
+        .schedule-container {
             max-width: 900px;
             margin: 0 auto;
-            flex-wrap: wrap;
+        }
+        
+        .schedule-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
+            gap: clamp(1rem, 2vw, 1.5rem);
+            margin-top: clamp(2rem, 4vw, 3rem);
+        }
+        
+        .schedule-card {
+            background: var(--card-bg);
+            border-radius: var(--border-radius);
+            padding: clamp(1.5rem, 3vw, 2rem);
+            transition: var(--transition);
+            border: 1px solid rgba(255, 215, 0, 0.1);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .schedule-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: var(--gradient);
+            transform: scaleX(0);
+            transition: var(--transition);
+        }
+        
+        .schedule-card:hover {
+            transform: translateY(-5px);
+            border-color: rgba(255, 215, 0, 0.3);
+            box-shadow: var(--shadow);
+        }
+        
+        .schedule-card:hover::before {
+            transform: scaleX(1);
+        }
+        
+        .schedule-card.featured {
+            border-color: rgba(156, 39, 176, 0.3);
+            background: linear-gradient(135deg, rgba(30, 30, 30, 0.95) 0%, rgba(42, 42, 42, 0.95) 100%);
+        }
+        
+        .schedule-card.featured::before {
+            background: linear-gradient(135deg, var(--accent), #FF4081);
+        }
+        
+        .schedule-icon-container {
+            width: clamp(50px, 5vw, 60px);
+            height: clamp(50px, 5vw, 60px);
+            background: rgba(255, 215, 0, 0.1);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1.5rem;
+            color: var(--secondary);
+            font-size: clamp(1.3rem, 2vw, 1.5rem);
+        }
+        
+        .schedule-card.featured .schedule-icon-container {
+            background: rgba(156, 39, 176, 0.1);
+            color: var(--accent);
+        }
+        
+        .time-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(255, 215, 0, 0.1);
+            color: var(--secondary);
+            padding: 8px 16px;
+            border-radius: 50px;
+            font-size: clamp(0.85rem, 1.5vw, 0.9rem);
+            font-weight: 600;
+            margin: 1rem 0;
+            border: 1px solid rgba(255, 215, 0, 0.2);
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        
+        .schedule-card.featured .time-badge {
+            background: rgba(156, 39, 176, 0.1);
+            color: var(--accent);
+            border-color: rgba(156, 39, 176, 0.2);
+        }
+        
+        .schedule-card p {
+            color: var(--gray);
+            line-height: 1.7;
+        }
+        
+        .schedule-note {
+            text-align: center;
+            margin-top: clamp(2rem, 4vw, 3rem);
+            padding: clamp(1rem, 2vw, 1.5rem);
+            background: rgba(255, 215, 0, 0.05);
+            border-radius: var(--border-radius);
+            border-left: 4px solid var(--secondary);
+        }
+        
+        /* Process */
+        .process-steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(min(200px, 100%), 1fr));
+            gap: clamp(1rem, 2vw, 2rem);
+            max-width: 900px;
+            margin: 0 auto;
         }
         
         .process-step {
-            flex: 1;
-            min-width: 200px;
             text-align: center;
             position: relative;
         }
         
         .step-number {
-            width: 60px;
-            height: 60px;
+            width: clamp(50px, 6vw, 60px);
+            height: clamp(50px, 6vw, 60px);
             background: var(--gradient);
             border-radius: 50%;
             display: flex;
@@ -411,57 +570,12 @@
             justify-content: center;
             margin: 0 auto 1.5rem;
             color: var(--primary);
-            font-size: 1.5rem;
+            font-size: clamp(1.3rem, 2vw, 1.5rem);
             font-weight: 700;
         }
         
         .process-step h3 {
             margin-bottom: 0.5rem;
-        }
-        
-        /* Payment Info */
-        .payment-info {
-            background: var(--card-bg);
-            border-radius: var(--border-radius);
-            padding: 3rem;
-            max-width: 800px;
-            margin: 0 auto;
-            border-left: 4px solid var(--secondary);
-        }
-        
-        .payment-schedule {
-            background: rgba(255, 215, 0, 0.05);
-            border-radius: 12px;
-            padding: 2rem;
-            margin-top: 2rem;
-        }
-        
-        .schedule-item {
-            display: flex;
-            align-items: flex-start;
-            gap: 1rem;
-            margin-bottom: 1.5rem;
-        }
-        
-        .schedule-item:last-child {
-            margin-bottom: 0;
-        }
-        
-        .schedule-icon {
-            width: 40px;
-            height: 40px;
-            background: rgba(255, 215, 0, 0.1);
-            border-radius: 10px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: var(--secondary);
-            flex-shrink: 0;
-        }
-        
-        .schedule-content h4 {
-            color: var(--light);
-            margin-bottom: 5px;
         }
         
         /* Contact */
@@ -480,10 +594,12 @@
         .contact-card {
             background: var(--card-bg);
             border-radius: var(--border-radius);
-            padding: 2rem;
-            min-width: 280px;
+            padding: clamp(1.5rem, 3vw, 2rem);
+            min-width: min(280px, 100%);
             transition: var(--transition);
             border: 1px solid rgba(255, 255, 255, 0.05);
+            max-width: 500px;
+            margin: 0 auto;
         }
         
         .contact-card:hover {
@@ -492,8 +608,8 @@
         }
         
         .contact-icon {
-            width: 60px;
-            height: 60px;
+            width: clamp(50px, 6vw, 60px);
+            height: clamp(50px, 6vw, 60px);
             background: rgba(255, 215, 0, 0.1);
             border-radius: 50%;
             display: flex;
@@ -501,27 +617,27 @@
             justify-content: center;
             margin: 0 auto 1.5rem;
             color: var(--secondary);
-            font-size: 1.5rem;
+            font-size: clamp(1.3rem, 2vw, 1.5rem);
         }
         
         /* Footer */
         footer {
             background: #0A0A0A;
-            padding: 4rem 0 2rem;
+            padding: clamp(3rem, 6vw, 4rem) 0 clamp(1.5rem, 3vw, 2rem);
             border-top: 1px solid rgba(255, 255, 255, 0.05);
         }
         
         .footer-content {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 3rem;
-            margin-bottom: 3rem;
+            grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr));
+            gap: clamp(2rem, 4vw, 3rem);
+            margin-bottom: clamp(2rem, 4vw, 3rem);
         }
         
         .footer-column h3 {
             color: var(--light);
             margin-bottom: 1.5rem;
-            font-size: 1.2rem;
+            font-size: clamp(1.1rem, 2vw, 1.2rem);
         }
         
         .footer-links {
@@ -537,6 +653,7 @@
             text-decoration: none;
             transition: var(--transition);
             display: inline-block;
+            font-size: clamp(0.9rem, 1.5vw, 1rem);
         }
         
         .footer-links a:hover {
@@ -554,8 +671,8 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            width: 40px;
-            height: 40px;
+            width: clamp(35px, 4vw, 40px);
+            height: clamp(35px, 4vw, 40px);
             background: rgba(255, 255, 255, 0.05);
             border-radius: 50%;
             color: var(--light);
@@ -571,23 +688,13 @@
         
         .copyright {
             text-align: center;
-            padding-top: 2rem;
+            padding-top: clamp(1.5rem, 3vw, 2rem);
             border-top: 1px solid rgba(255, 255, 255, 0.05);
             color: var(--gray);
-            font-size: 0.9rem;
+            font-size: clamp(0.8rem, 1.5vw, 0.9rem);
         }
         
         /* Responsive Design */
-        @media (max-width: 1024px) {
-            h1 {
-                font-size: 2.8rem;
-            }
-            
-            h2 {
-                font-size: 2.2rem;
-            }
-        }
-        
         @media (max-width: 768px) {
             .mobile-menu-btn {
                 display: block;
@@ -637,55 +744,17 @@
                 padding: 150px 0 80px;
             }
             
-            h1 {
-                font-size: 2.4rem;
-            }
-            
-            section {
-                padding: 80px 0;
-            }
-            
-            .process {
-                padding: 60px 20px;
-            }
-            
-            .process-steps {
-                flex-direction: column;
-                align-items: center;
-                gap: 3rem;
-            }
-            
-            .payment-info {
-                padding: 2rem;
-            }
-            
             .contact-options {
                 flex-direction: column;
                 align-items: center;
             }
-            
-            .contact-card {
-                width: 100%;
-                max-width: 400px;
-            }
         }
         
-        @media (max-width: 576px) {
-            h1 {
-                font-size: 2rem;
-            }
-            
-            h2 {
-                font-size: 1.8rem;
-            }
-            
+        @media (max-width: 480px) {
             .hero-stats {
                 flex-direction: column;
+                align-items: flex-start;
                 gap: 1.5rem;
-            }
-            
-            .service-card, .security-card {
-                padding: 1.5rem;
             }
             
             .cta-button, .whatsapp-button {
@@ -693,8 +762,17 @@
                 justify-content: center;
             }
             
-            .payment-info {
+            .schedule-card {
                 padding: 1.5rem;
+            }
+            
+            .time-badge {
+                white-space: normal;
+                text-align: center;
+            }
+            
+            .logo-text {
+                font-size: 1.1rem;
             }
         }
         
@@ -704,6 +782,10 @@
                 animation-duration: 0.01ms !important;
                 animation-iteration-count: 1 !important;
                 transition-duration: 0.01ms !important;
+            }
+            
+            .loading {
+                transition: none !important;
             }
         }
         
@@ -727,6 +809,11 @@
         .loading.loaded {
             opacity: 1;
             transform: translateY(0);
+        }
+        
+        /* Schema Structured Data (invisible) */
+        .structured-data {
+            display: none;
         }
     </style>
 </head>
@@ -769,7 +856,7 @@
                 <p>Depósitos instantáneos, retiros programados y atención personalizada. Tu cajero confiable en Celuapuestas para una experiencia de juego fluida y sin complicaciones.</p>
                 
                 <div class="hero-buttons">
-                    <a href="https://wa.me/5493765300975" class="cta-button" target="_blank" rel="noopener">
+                    <a href="https://wa.me/5493765300975" class="cta-button" target="_blank" rel="noopener noreferrer">
                         <i class="fab fa-whatsapp"></i>
                         Contactar por WhatsApp
                     </a>
@@ -854,53 +941,58 @@
         </div>
     </section>
 
-    <!-- Payment Schedule Section -->
-    <section id="pagos" class="process">
-        <div class="container">
+    <!-- NUEVO DISEÑO: Horario de Pagos Section -->
+    <section id="pagos" class="payment-schedule-section">
+        <div class="container schedule-container">
             <div class="section-header loading">
                 <h2>Horario de Pagos</h2>
-                <p>Sistema organizado para asegurar tus retiros de manera eficiente</p>
+                <p>Sistema organizado para asegurar tus retiros de manera eficiente y puntual</p>
             </div>
             
-            <div class="payment-info loading">
-                <h3 style="text-align: center; margin-bottom: 2rem; color: var(--secondary);">
-                    <i class="fas fa-clock"></i> Sistema de Pagos Organizado
-                </h3>
-                
-                <div class="payment-schedule">
-                    <div class="schedule-item">
-                        <div class="schedule-icon">
-                            <i class="fas fa-money-bill-wave"></i>
-                        </div>
-                        <div class="schedule-content">
-                            <h4>Premios Grandes</h4>
-                            <p style="color: var(--light);"><strong>De 12:30 hs a 14:30 hs</strong> - Para retiros importantes programamos un horario específico para asegurar la transacción.</p>
-                        </div>
+            <div class="schedule-cards">
+                <div class="schedule-card featured loading">
+                    <div class="schedule-icon-container">
+                        <i class="fas fa-money-bill-wave"></i>
                     </div>
-                    
-                    <div class="schedule-item">
-                        <div class="schedule-icon">
-                            <i class="fas fa-coins"></i>
-                        </div>
-                        <div class="schedule-content">
-                            <h4>Pagos Inmediatos</h4>
-                            <p style="color: var(--light);"><strong>Según disponibilidad de caja</strong> - Los retiros regulares se pagan en el momento, dependiendo del flujo de mi caja.</p>
-                        </div>
+                    <h3>Premios Grandes</h3>
+                    <div class="time-badge">
+                        <i class="fas fa-clock"></i>
+                        12:30 hs - 14:30 hs
                     </div>
-                    
-                    <div class="schedule-item">
-                        <div class="schedule-icon">
-                            <i class="fas fa-calendar-check"></i>
-                        </div>
-                        <div class="schedule-content">
-                            <h4>Depósitos Ilimitados</h4>
-                            <p style="color: var(--light);"><strong>24/7 - Sin restricciones</strong> - Puedes cargar fichas en cualquier momento del día, todos los días.</p>
-                        </div>
-                    </div>
+                    <p>Para retiros importantes programamos un horario específico. Coordinamos entre las 12:30 y 14:30 hs para asegurar transacciones seguras y sin inconvenientes.</p>
                 </div>
                 
-                <p style="text-align: center; margin-top: 2rem; color: var(--secondary); font-weight: 600;">
-                    <i class="fas fa-info-circle"></i> Consulta siempre por WhatsApp para coordinar tu retiro
+                <div class="schedule-card loading">
+                    <div class="schedule-icon-container">
+                        <i class="fas fa-coins"></i>
+                    </div>
+                    <h3>Pagos Inmediatos</h3>
+                    <div class="time-badge">
+                        <i class="fas fa-sync-alt"></i>
+                        Según disponibilidad
+                    </div>
+                    <p>Los retiros regulares se pagan en el momento, dependiendo del flujo de caja. Siempre priorizamos la atención inmediata para montos habituales.</p>
+                </div>
+                
+                <div class="schedule-card loading">
+                    <div class="schedule-icon-container">
+                        <i class="fas fa-calendar-check"></i>
+                    </div>
+                    <h3>Depósitos Ilimitados</h3>
+                    <div class="time-badge">
+                        <i class="fas fa-infinity"></i>
+                        24/7 Sin restricciones
+                    </div>
+                    <p>Puedes cargar fichas en cualquier momento del día, todos los días. Depósitos instantáneos para que no pierdas ninguna oportunidad de juego.</p>
+                </div>
+            </div>
+            
+            <div class="schedule-note loading">
+                <h3 style="color: var(--secondary); margin-bottom: 1rem;">
+                    <i class="fas fa-info-circle"></i> Información Importante
+                </h3>
+                <p style="color: var(--light); margin-bottom: 0;">
+                    <strong>Consulta siempre por WhatsApp para coordinar tu retiro.</strong> La comunicación previa asegura una transacción rápida y sin contratiempos.
                 </p>
             </div>
         </div>
@@ -945,7 +1037,7 @@
             </div>
             
             <div class="contact-options">
-                <div class="contact-card loading" style="max-width: 500px;">
+                <div class="contact-card loading">
                     <div class="contact-icon">
                         <i class="fab fa-whatsapp"></i>
                     </div>
@@ -958,7 +1050,7 @@
                         <p style="margin-top: 0.5rem;"><strong>Respuesta:</strong> Inmediata en horario laboral</p>
                     </div>
                     
-                    <a href="https://wa.me/5493765300975" class="whatsapp-button" style="margin-top: 2rem;" target="_blank" rel="noopener">
+                    <a href="https://wa.me/5493765300975" class="whatsapp-button" style="margin-top: 2rem;" target="_blank" rel="noopener noreferrer">
                         <i class="fab fa-whatsapp"></i>
                         Contactar por WhatsApp
                     </a>
@@ -980,7 +1072,7 @@
                     </div>
                     <p style="color: var(--gray); margin-bottom: 1.5rem;">Servicio profesional de gestión de fichas con horarios organizados y atención personalizada.</p>
                     <div class="social-links">
-                        <a href="https://wa.me/5493765300975" target="_blank" rel="noopener" aria-label="WhatsApp">
+                        <a href="https://wa.me/5493765300975" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
                             <i class="fab fa-whatsapp"></i>
                         </a>
                     </div>
@@ -1013,6 +1105,40 @@
             </div>
         </div>
     </footer>
+
+    <!-- Structured Data for SEO -->
+    <div class="structured-data">
+        <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Service",
+            "name": "Cajero Celuapuestas",
+            "description": "Servicio de carga rápida de fichas para Celuapuestas con depósitos instantáneos y retiros programados.",
+            "url": "https://celuapuestas.github.io",
+            "provider": {
+                "@type": "Organization",
+                "name": "Cajero Celuapuestas",
+                "logo": "https://celuapuestas.github.io/favicon.png"
+            },
+            "serviceType": "Carga de fichas para juegos online",
+            "areaServed": {
+                "@type": "Country",
+                "name": "Argentina"
+            },
+            "availableChannel": {
+                "@type": "ServiceChannel",
+                "serviceUrl": "https://wa.me/5493765300975",
+                "servicePhone": "+5493765300975"
+            },
+            "hoursAvailable": {
+                "@type": "OpeningHoursSpecification",
+                "opens": "00:00",
+                "closes": "23:59",
+                "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
+            }
+        }
+        </script>
+    </div>
 
     <script>
         // Mobile menu toggle
@@ -1093,7 +1219,7 @@
             
             loadingElements.forEach(el => observer.observe(el));
             
-            // Update copyright year to 2026
+            // Update copyright year
             const yearElements = document.querySelectorAll('.copyright p');
             yearElements.forEach(el => {
                 el.textContent = el.textContent.replace('2023', '2026');
@@ -1131,9 +1257,13 @@
             }
         });
         
-        // Preload critical images (if any)
+        // Preload critical images
         window.addEventListener('load', () => {
             document.body.classList.add('loaded');
+            
+            // Precargar favicon para mejor experiencia
+            const img = new Image();
+            img.src = 'favicon.png';
         });
     </script>
 </body>
